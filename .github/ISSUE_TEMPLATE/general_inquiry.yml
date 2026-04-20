@@ -1,0 +1,65 @@
+name: 💬 General Inquiry
+description: Ask a question, start a discussion, or reach out about partnerships and collaboration.
+title: "[Inquiry]: "
+labels: ["question"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## General Inquiry
+        Have a question about an X Labs project, or interested in partnering with Castra Labs? Use this form to start the conversation.
+
+        > For **bugs**, use the Bug Report template. For **feature ideas**, use the Feature Request template. For **security issues**, email **security@castralabs.com** directly.
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Inquiry Type
+      description: What best describes your inquiry?
+      options:
+        - Technical Question
+        - Partnership / Collaboration Interest
+        - General Feedback
+        - Documentation Improvement
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: project
+    attributes:
+      label: Related Project (if applicable)
+      description: Which X Labs project or repo does this relate to?
+      placeholder: e.g. x-labs/project-name or "General / X Labs"
+    validations:
+      required: false
+
+  - type: textarea
+    id: inquiry
+    attributes:
+      label: Your Message
+      description: Share your question, feedback, or interest. The more context, the better.
+      placeholder: What's on your mind?
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: Preferred Contact (optional)
+      description: If you'd like a response outside of GitHub, provide an email or other contact.
+      placeholder: e.g. hello@yourcompany.com
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      options:
+        - label: I have read the README and existing documentation before asking.
+          required: true
+        - label: This is not a bug report or security vulnerability.
+          required: true
