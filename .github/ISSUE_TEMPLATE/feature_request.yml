@@ -1,0 +1,94 @@
+name: 🚀 Feature Request
+description: Propose a new feature or enhancement for an X Labs project.
+title: "[Feature]: "
+labels: ["enhancement", "triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Request
+        Got an idea that would make this project better? We want to hear it. Please fill out the form below so we can evaluate your proposal effectively.
+
+  - type: input
+    id: project
+    attributes:
+      label: Affected Project / Repository
+      description: Which X Labs project or repo is this feature request for?
+      placeholder: e.g. x-labs/project-name
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What problem does this feature solve? What's the current pain point or limitation?
+      placeholder: "I'm frustrated when... / Currently there's no way to... / It would save time if..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution
+      description: Describe the feature or enhancement you'd like to see. Be as specific as possible.
+      placeholder: A clear description of what you want to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you tried workarounds or considered other approaches? Why didn't they work?
+      placeholder: Describe any alternative solutions or features you've considered.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected Impact
+      description: How impactful would this feature be?
+      options:
+        - 🌟 High — unlocks major functionality or removes a critical blocker
+        - 📈 Medium — meaningful improvement to existing workflows
+        - ✨ Low — nice-to-have quality-of-life improvement
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Feature Type
+      description: What category best describes this request?
+      options:
+        - New Functionality
+        - Enhancement to Existing Feature
+        - Developer Experience / Tooling
+        - Performance Improvement
+        - Documentation
+        - Accessibility
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional Context
+      description: Mockups, diagrams, links to related issues, or any other supporting information.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Submission Checklist
+      options:
+        - label: I have searched existing issues and this has not already been requested.
+          required: true
+        - label: This request is specific to this project, not a third-party dependency.
+          required: true
