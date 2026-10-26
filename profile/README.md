@@ -21,8 +21,8 @@ We believe the best technology companies aren't built by waiting. They're built 
 
 Have an idea worth building? Whether you're an early-stage founder looking for a technical partner, or you've got a problem that existing tools can't solve — we want to hear from you.
 
-- 🌐 [castralabs.com](https://castralabs.com)
-- 📬 [Contact Us](https://castralabs.com/#contact)
+- 🌐 [castralabs.com](https://castralabs.com?utm_source=github&utm_medium=link&utm_campaign=github-profile)
+- 📬 [Contact Us](https://castralabs.com/#contact?utm_source=github&utm_medium=link&utm_campaign=github-profile-contact)
 
 ---
 
